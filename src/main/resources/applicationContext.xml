@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+    <bean name="Bean1" id="Bean1" class="model.Bean1" init-method="init">
+        <property name="beanName" value="bean1Name"/>
+    </bean>
+
+    <bean name="Bean2" id="Bean2" class="model.Bean2">
+        <property name="beanName" value="bean2Name"/>
+    </bean>
+
+    <bean id="InitBean2" class="model.InitBean2" />
+    <bean id="InitBean1" class="model.InitBean1" />
+</beans>
